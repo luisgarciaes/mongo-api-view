@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <table>
+            <tr>
+                <th>SSN</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Blood type</th>
+            </tr>
+            <% persons.forEach(function(person) { %>
+                <tr>
+                    <td>
+                        <%= person.ssn %>
+                    </td>
+                    <td>
+                        <%= person.name %>
+                    </td>
+                    <td>
+                        <%= person.age %>
+                    </td>
+                    <td>
+                        <%= person.bloodType %>
+                    </td>
+                </tr>
+
+                <% }); %>
+        </table>
+    </ul>
+
+</body>
+
+</html>
